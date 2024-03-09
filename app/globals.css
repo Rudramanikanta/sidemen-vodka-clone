@@ -1,7 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+/* Apply font family to elements with class .syn */
+.syn {
+  font-family: Syncopate;
+}
 
+/* Transition effect when hovering over the .outer div */
+.outer:hover > .inner{
+  transform: translateY(100%);
+}
+.home-hero-content {
+  width: 100%;
+  height: 100vh;
+  grid-column-gap: 4rem;
+  grid-row-gap: 4rem;
+  background-image: url(https://assets-global.website-files.com/65b28a890e5fcd78527020aa/65c11998f75b09dfc35a5197_Mixed%20Berry%20hero%20comp%20V2.jpeg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-direction: row;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 1fr;
+  grid-auto-columns: 1fr;
+  justify-content: center;
+  align-items: flex-end;
+  justify-items: center;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
+  display: flex;
+  position: relative;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,4 +54,18 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.transfer{
+  animation-name:example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes example {
+  from{
+    margin-left: 0%;
+  }
+  to{
+    margin-left: -80%;
+  }
 }
