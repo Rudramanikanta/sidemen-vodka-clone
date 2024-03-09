@@ -57,13 +57,7 @@ export default function Home() {
             <Image src="/add.svg" height={10} width={10} alt="add"></Image>
           </button>
         </div>
-        <div className="bg-gray-900/50">
-          <h2>About</h2>
-          <p>Be one of the first to get your hands on the bottle.</p>
-          <p>If you want to try before you buy, get down to Wetherspoons this week</p>
-          <p>Sweet & fruity, you’ll love it. Strawberry, blackberry, raspberry and blueberry flavours give XIX Mixed Berry Vodka a satisfying finish.</p>
-          <p>70CL, 40VOL</p>
-        </div>
+       
       </div>
     </div>
   );
