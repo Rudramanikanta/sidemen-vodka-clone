@@ -89,6 +89,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+<<<<<<< HEAD
         
         <div className="flex justify-between mt-10 ml-10 mr-10 mont bottom-20">
         <div className="items-start">
@@ -105,6 +106,17 @@ export default function Home() {
           </div>
         </div>
         
+=======
+        <div className="flex items-center justify-center text-center gap-x-2">
+          <button className=" h-fit border-[2px] py-2 px-8 border-gray-700/50 rounded-lg font-light">
+            View details
+          </button>
+          <button className="h-fit border-[2px] py-[0.9rem] px-4 border-gray-700/50 rounded-lg font-light">
+            <Image src="/add.svg" height={10} width={10} alt="add"></Image>
+          </button>
+        </div>
+       
+>>>>>>> 9a636ba9d36bbd326b46e6244142478c179fc454
       </div>
     </div>
   );
