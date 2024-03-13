@@ -10,8 +10,13 @@ const Letter = ({ value, index }) => {
     visible: { y: 0, opacity: 1 },
   };
   const animationdelay = 0.2;
+  if(value===" "){
+    return(
+        <div>&nbsp;</div>
+    )
+  }
   return (
-    <motion.span
+    <motion.p
       ref={ref}
       initial="hidden"
       custom={index}
@@ -19,8 +24,9 @@ const Letter = ({ value, index }) => {
       transition={{ delay: index * animationdelay }}
       animate={inView ? "visible" : "hidden"}
     >
+  
       {value}
-    </motion.span>
+    </motion.p>
   );
 };
 

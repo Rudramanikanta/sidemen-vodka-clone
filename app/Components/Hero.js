@@ -5,7 +5,7 @@ import {gsap} from 'gsap'
 const Hero = () => {
   const ref=useRef(null);
   const ref2=useRef(null);
-  console.log(ref.current)
+
   useEffect(()=>{
   gsap.fromTo(
     ref.current,
@@ -37,7 +37,7 @@ const Hero = () => {
     }
   )},[])
   return (
-    <div className="items-center justify-center overflow-hidden home-hero-content">
+    <div className="items-center justify-center overflow-hidden text-center home-hero-content">
         <div className="relative mb-10">
           <div className='overflow-hidden h-fit'>
           <h1 ref={ref} className="font-black tracking-[0.70rem] text-7xl  ">MIXED</h1>
@@ -48,9 +48,9 @@ const Hero = () => {
           </h1>
           </div>
           <button className="group px-5 z-[10] py-3 mt-10 text-black bg-white rounded-lg syn">
-            <div className="h-5 overflow-hidden ">
-              <p className=" animate duration-300 ease-in group-hover:translate-y-[-100%]">out now</p>
-              <p className=" animate duration-300 ease-in group-hover:translate-y-[-100%]">out now</p>
+            <div className="h-5 overflow-hidden font-light">
+              <p className=" animate duration-300 ease-in group-hover:translate-y-[-100%] font-semibold">out now</p>
+              <p className=" animate duration-300 ease-in group-hover:translate-y-[-100%] font-semibold">out now</p>
             </div>
           </button>
         </div>

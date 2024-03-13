@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 const ImageAnimate = ({path,height,width}) => {
-    const hidden=(height/2)-3;
+
   return (
     <div className='group'>
     <div className={`h-[26px]  overflow-hidden`}>

@@ -2,9 +2,10 @@ import React from "react";
 import TextAnimate from "./TextAnimate";
 import Image from "next/image";
 import ImageAnimate from "./ImageAnimate";
+import Link from "next/link";
 const Navbar = () => {
   return (
-    <div className="absolute z-10 flex items-center justify-between min-w-full px-3 py-3 text-lg font-semibold text-center bg-black">
+    <div className="absolute z-10 flex items-center justify-between min-w-full px-3 py-3 text-lg font-semibold text-center bg-black mont">
       <div className="flex mt-4 ml-[50px] gap-x-10 md:flex sm:hidden">
         <TextAnimate text="Shops"></TextAnimate>
         <TextAnimate text="Drops"></TextAnimate>
@@ -25,13 +26,19 @@ const Navbar = () => {
         </div>
         <div className="flex justify-between gap-x-2">
           <div className="p-[9px] hover:border-white  rounded-full h-fit w-fit border border-gray-800">
+            <Link href="https://www.instagram.com/rudra_abburi/">
             <Image src="/tiktok.png" height={12} width={12} alt="tik"></Image>
+            </Link>
           </div>
           <div className="p-[9px] hover:border-white  rounded-full h-fit w-fit border border-gray-800">
+          <Link href="https://www.instagram.com/rudra_abburi/">
             <Image src="/insta.svg" height={12} width={12} alt="tik"></Image>
+            </Link>
           </div>
           <div className="p-[9px] hover:border-white  rounded-full h-fit w-fit border border-gray-900">
+          <Link href="https://twitter.com/RudraAbburi">
             <Image src="/twitter.png" height={12} width={12} alt="tik"></Image>
+            </Link>
           </div>
         </div>
       </div>

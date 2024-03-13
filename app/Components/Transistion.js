@@ -1,12 +1,17 @@
 "use client";
-import React from "react";
+import React,{useState} from "react";
 import { motion, anim } from "framer-motion";
 import Image from "next/image";
 const Transistion = () => {
+  const [completed,setCompleted]=useState(false)
   return (
     <motion.div
-      initial="visible"
-      animate="hidden"
+    initial={{opacity: 1}}
+    animate={{
+      opacity: 0,
+      display: completed ? "flex" : "none"
+    }}
+    onAnimationComplete={() => setCompleted(false)}
       duration="3"
       
       variants= {{
