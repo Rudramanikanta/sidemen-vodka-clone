@@ -15,7 +15,7 @@ const Bottom2 = () => {
     "XIX Premium Vodka is committed to providing a clean & natural experience. Boasting both classic and flavoured vodkas with no artificial flavourings, the Sidemen founded XIX in 2021 and set out to make something for the culture. We are not playing.";
   return (
     <>
-      <div className="lg:h-[130vh] w-full flex ">
+      <div className="lg:h-[130vh] sm:hidden w-full lg:flex ">
         <div className="w-[50%] h-full justify-center text-center">
           <div className="relative flex justify-center w-full h-full text-center ">
             <div className="mt-[50px]">

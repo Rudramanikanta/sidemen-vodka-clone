@@ -6,7 +6,7 @@ import Link from "next/link";
 const Navbar = () => {
   return (
     <div className="absolute z-10 flex items-center justify-between min-w-full px-3 py-3 text-lg font-semibold text-center bg-black mont">
-      <div className="flex mt-4 ml-[50px] gap-x-10 md:flex sm:hidden">
+      <div className=" mt-4 ml-[50px] gap-x-10 lg:flex hidden sm:hidden">
         <TextAnimate text="Shops"></TextAnimate>
         <TextAnimate text="Drops"></TextAnimate>
         <TextAnimate text="About"></TextAnimate>

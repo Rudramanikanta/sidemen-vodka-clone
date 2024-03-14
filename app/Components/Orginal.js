@@ -8,7 +8,7 @@ const Berry = () => {
   const [hidden, sethidden] = useState(false);
   return (
     <div className="p-10 ml-[10px] mr-[10px] border-b-[2px]  border-gray-700/50">
-      <div className="flex items-center justify-between text-center">
+      <div className="lg:flex items-center justify-between text-center">
         <div className="flex items-center justify-center text-center ml-7 gap-x-3">
           <Image
             src="/original.png"
@@ -88,7 +88,7 @@ const Berry = () => {
         </div>
       </div>
       {hidden && (
-        <div className="items-start transition-all animation duration-300 rounded-xl justify-start p-12 mt-10 lg:flex md:grid bg-[#0a0a0a]">
+        <div className="items-start transition-all animation duration-300 rounded-xl justify-start p-12 mt-10 lg:flex  bg-[#0a0a0a]">
           <div className="ml-12">
             <h2 className="bg-[#0a0a0a] opacity-50 mb-5 ">About</h2>
             <p className="mb-5 leading-10 mont">
